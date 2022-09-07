@@ -34,5 +34,15 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()      
+    ax = fig.add_subplot()  
+
+    ax.plot(x, y)           
+    ax.set_facecolor('whitesmoke')
+    ax.set_title("Funcion cuadratica")
+    ax.set_ylabel("Y")
+    ax.set_xlabel("X")
+    plt.show()     
+
 
     print("terminamos")
