@@ -54,4 +54,44 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+
+    ax1.plot(x, y1, c='m', marker='*', label='y = x2')
+    ax1.set_facecolor('whitesmoke')
+    ax1.grid('solid')
+    ax1.set_title("Funcion raiz cuadrada")
+    ax1.set_ylabel("Y")
+    ax1.set_xlabel("X")       
+    ax1.legend()
+
+    ax2.plot(x, y2, c='r', marker='*', label='y = x3')
+    ax2.set_facecolor('whitesmoke')
+    ax2.grid('solid')
+    ax2.set_title("Funcion cuadratica")
+    ax2.set_ylabel("Y")
+    ax2.set_xlabel("X")       
+    ax2.legend()
+
+    ax3.plot(x, y3, c='b', marker='+', label='y = x4')
+    ax3.set_facecolor('whitesmoke')
+    ax3.grid('solid')
+    ax3.set_title("Funcion cubica")
+    ax3.set_ylabel("Y")
+    ax3.set_xlabel("X")       
+    ax3.legend()
+
+    ax4.plot(x, y4, c='c', marker='.', label='y = sqrt(x)')
+    ax4.set_facecolor('whitesmoke')
+    ax4.grid('solid')
+    ax4.set_title("Funcion cuarta")
+    ax4.set_ylabel("Y")
+    ax4.set_xlabel("X")       
+    ax4.legend()
+
+    plt.show()
+
     print("terminamos")
