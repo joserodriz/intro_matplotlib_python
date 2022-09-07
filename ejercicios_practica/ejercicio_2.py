@@ -46,4 +46,16 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
+    ax.plot(x, y1, color='b', marker='^', label='y = x2')
+    ax.plot(x, y2, color='r', marker='*', label='y = x3')
+    ax.set_facecolor('whitesmoke')
+    ax.set_title("Funciones")
+    ax.set_ylabel("Y")
+    ax.set_xlabel("X")       
+    ax.legend()
+    plt.show()
+
     print("terminamos")
